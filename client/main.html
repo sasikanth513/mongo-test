@@ -1,0 +1,32 @@
+<head>
+  <title>botanalyzer</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>type</th>
+        <th>source</th>
+        <th>Team</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each messages}}
+      <tr>
+        <td>{{email}}</td>
+        <td>{{type}}</td>
+        <td>{{source}}</td>
+        <td>{{team}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
